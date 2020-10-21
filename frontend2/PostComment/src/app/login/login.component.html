@@ -1,0 +1,20 @@
+
+
+<div class="login_container">
+<form [formGroup]="userLogin">
+          
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="email" required>
+    </mat-form-field>
+   <br>
+   
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" placeholder="password" required>
+    </mat-form-field>
+    </form>
+ <br>
+    <button mat-raised-button color="accent" (click)="forward()">Login</button>
+
+</div>

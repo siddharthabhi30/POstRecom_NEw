@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="post">
+       {{post.user.userName}}
+     <hr>
+     <h3>{{post.data}}</h3>
+             
+    </div>
+
+    <div class="comments">
+        <div class="comment_card">
+            <input type="text" [(ngModel)]="myComment"> <button (click)="postComment()">post</button>
+        </div>
+        <div class="comment_card" *ngFor="let comment of comments">
+            {{comment.post.user.userName}} &nbsp;  {{comment.data}}
+
+
+        </div>
+    </div>
+</div>

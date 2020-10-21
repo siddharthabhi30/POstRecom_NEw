@@ -1,0 +1,21 @@
+<div class="container">
+
+
+<app-post-item  *ngFor="let post of posts" [post]="post" (click)="fu(post)">
+  
+
+</app-post-item>
+
+</div>
+
+<button class="menu" mat-fab color="accent"  [matMenuTriggerFor]="aboveMenu">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Home</button>
+  <button mat-menu-item>Account</button>
+  <button mat-menu-item>Setting</button>
+  <button mat-menu-item (click)="newPost()">New Post</button>
+</mat-menu>
+

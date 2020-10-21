@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 3%;
+    height: 97%;
+    width: 100%;
+    color: white;
+}
+
+.post{
+    padding-left: 10px;
+    min-height: 20%;
+    max-height: 30%;
+   background: rgba(255, 255, 255,0.16);
+}
+.comments{
+    max-height: 80%;
+    margin-top: 2%;
+    
+    min-height: 70%;
+    overflow: scroll;
+    
+}
+.comment_card{
+    color: white;
+    background: rgba(255, 255, 255,0.16);
+    font-size: 1.3em;
+    min-height: 40px;
+    padding: 12px;
+    word-wrap: break-word;
+    margin-top: 2%;
+}

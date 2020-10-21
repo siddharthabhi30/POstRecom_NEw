@@ -1,0 +1,28 @@
+<div class="container"  *ngIf="isDataLoaded1&&isDataLoaded2">
+    <div class="post">
+      <h2>{{post.user.userName}}</h2>
+     <hr>
+     <h3>{{post.data}}</h3>
+             
+    </div>
+    <div class="comment_card" style="display: flex; justify-content: space-around; align-items: center;">
+        <div>
+            <textarea id="txtarea" name="" id=""   [(ngModel)]="myComment"> </textarea> 
+        </div>
+        
+        <div>
+            <button mat-raised-button color="accent" (click)="postComment()">Post</button>
+        </div>  
+
+    </div>
+
+    <div class="comments" #divToScroll>
+       
+        <div class="comment_card" *ngFor="let comment of comments">
+            {{comment.title}}: &nbsp;  {{comment.data}}
+
+
+        </div>
+    </div>
+</div>
+

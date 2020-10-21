@@ -1,0 +1,25 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    scroll-behavior: auto;
+    height: 100%;
+}
+.input{
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+
+.cards{
+    min-height: 70px;
+    background-color: blue;
+}
+.menu{
+    display: block;
+    position: sticky;
+    bottom: 3%;
+   
+    left: 80%;
+}
+

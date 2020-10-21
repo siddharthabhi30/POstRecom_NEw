@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+  
+    height: 97%;
+    width: 100%;
+    color: white;
+}
+
+.post{
+    padding-left: 10px;
+    min-height: 20%;
+    max-height: 25%;
+   background: rgba(255, 255, 255,0.16);
+}
+.comments{
+    max-height: 70%;
+    margin-top: 2%;
+    
+    min-height: 70%;
+    overflow: scroll;
+    
+}
+.comment_card{
+    color: white;
+    background: rgba(255, 255, 255,0.16);
+    font-size: 1.2em;
+    min-height: 40px;
+    padding: 12px;
+    word-wrap: break-word;
+    margin-top: 2%;
+}
+textarea{
+    height: 7%;
+    width:110%;
+    background-color: grey;
+    border: 0px black ;
+    color: white;
+    font-size: 1.3em;
+    outline: none;
+}

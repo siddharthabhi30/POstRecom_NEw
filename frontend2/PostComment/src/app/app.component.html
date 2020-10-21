@@ -1,0 +1,18 @@
+<router-outlet>
+    </router-outlet>
+
+    
+<button class="menu" mat-fab color="accent"  [matMenuTriggerFor]="aboveMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+    
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button mat-menu-item (click)="home()">Home</button>
+    
+    <button mat-menu-item>Account</button>
+    <button mat-menu-item>Setting</button>
+    <button mat-menu-item (click)="newPost()">New Post</button>
+    <button mat-menu-item (click)="login()">login</button>
+  </mat-menu>
+  

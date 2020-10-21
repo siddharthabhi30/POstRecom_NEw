@@ -1,0 +1,19 @@
+<div class="container" *ngIf="isData">
+
+
+    <div  *ngFor="let comment of comments">
+      
+        <div class="cards">
+ 
+   
+            <div class="title">
+               {{comment.post.user.userName}}: &nbsp;  {{comment.data.substring(0,10)}}.....
+            </div>
+            <mat-divider></mat-divider>
+            <br>
+            <div class="data">{{comment.data}}</div>
+        </div>
+    </div>
+
+    
+    </div>
